@@ -1,5 +1,5 @@
 <p align="center">
-  Ruzgar Ertuyun
+  # Ruzgar Ertuyun
   <br>
   Home|CSP|Projects
   <br>
