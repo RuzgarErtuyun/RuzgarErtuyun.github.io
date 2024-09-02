@@ -1,7 +1,7 @@
 <p align="center">
-  # Ruzgar Ertuyun
+   #Ruzgar Ertuyun
   <br>
-  Home|CSP|Projects
+  ##Home|CSP|Projects
   <br>
   Hello my name is Ruzgar Ertuyun i am a student going to Hisar in Türkiye.
   <br>
