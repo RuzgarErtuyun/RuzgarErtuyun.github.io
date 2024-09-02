@@ -3,7 +3,7 @@
   <br>
   <p align="center">
    
-  [Home](https://ruzgarertuyun.github.io/)|CSP|Projects
+  [Home](https://ruzgarertuyun.github.io/)|[CSP](https://ruzgarertuyun.github.io/CSP.md)|Projects
  
   </p>
   <br>
