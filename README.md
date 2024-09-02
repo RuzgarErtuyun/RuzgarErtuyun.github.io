@@ -1,7 +1,7 @@
 <p align="center">
-   #Ruzgar Ertuyun
+   <h1>Ruzgar Ertuyun 1</h1>
   <br>
-  ##Home|CSP|Projects
+  <h2>Home|CSP|Projects 1</h2>
   <br>
   Hello my name is Ruzgar Ertuyun i am a student going to Hisar in Türkiye.
   <br>
