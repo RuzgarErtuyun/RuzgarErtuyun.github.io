@@ -1,6 +1,6 @@
-<p align="center">
-   
+<center>
   # Ruzgar Ertuyun
+
   <br>
   
   ## Home|CSP|Projects
@@ -10,4 +10,4 @@
   I am interested to learn coding which is why i have chosen ap csp this year(2024)
   <br>
   My hobbies are playing basketball, tennis and video games.
-</p>
+  </center>
