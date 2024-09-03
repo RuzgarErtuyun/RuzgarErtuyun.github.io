@@ -8,7 +8,7 @@
   |[Projects](https://ruzgarertuyun.github.io/Projects.md)
   |[Develop in Swift](https://ruzgarertuyun.github.io/Develop-in-Swift.md)
  
-  </p>
+
   <br>
   Hello my name is Ruzgar Ertuyun i am a student going to Hisar in Türkiye.
   <br>
