@@ -2,7 +2,6 @@
    Ruzgar Ertuyun
   <br>
  
-  <p align="center">
      
   [Home](https://ruzgarertuyun.github.io/)
   |[CSP](https://ruzgarertuyun.github.io/CSP.md)
