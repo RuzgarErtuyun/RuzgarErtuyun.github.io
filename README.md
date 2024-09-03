@@ -2,13 +2,13 @@
    Ruzgar Ertuyun
   <br>
  
-     
-  [Home](https://ruzgarertuyun.github.io/)
-  |[CSP](https://ruzgarertuyun.github.io/CSP.md)
-  |[Projects](https://ruzgarertuyun.github.io/Projects.md)
-  |[Develop in Swift](https://ruzgarertuyun.github.io/Develop-in-Swift.md)
+  <p align="center">   
+  <a href="https://ruzgarertuyun.github.io">Home|</a>
+  <a href="https://ruzgarertuyun.github.io/CSP.md">CS50|</a>
+  <a href="https://ruzgarertuyun.github.io/Projects.md">Projects|</a>
+  <a href="https://ruzgarertuyun.github.io/Develop-in-Swift.md">Develop-in-Swift</a>
  
-
+</p>
   <br>
   Hello my name is Ruzgar Ertuyun i am a student going to Hisar in Türkiye.
   <br>
@@ -16,4 +16,4 @@
   <br>
   My hobbies are playing basketball, tennis and video games.
 
-</p>
+
