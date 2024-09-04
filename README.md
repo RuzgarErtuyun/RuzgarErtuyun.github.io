@@ -5,7 +5,7 @@
   <p align="center">   
   <a href="https://ruzgarertuyun.github.io">Home|</a>
   <a href="https://ruzgarertuyun.github.io/CSP.md">CS50|</a>
-  <a href="https://ruzgarertuyun.github.io/Projects.md">Projects|</a>
+  <a href="https://ruzgarertuyun.github.io/Projects.html">Projects|</a>
   <a href="https://ruzgarertuyun.github.io/Develop-in-Swift.md">Develop-in-Swift</a>
  
 </p>
