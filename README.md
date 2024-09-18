@@ -18,7 +18,7 @@ Hello! My name is **Ruzgar Ertuyun**, and I am a student at Hisar in Türkiye. I
 In my free time, I enjoy:
 - 🏀 Playing **basketball**
 - 🎾 Playing **tennis**
-- 🎮 Enjoying **video games**
+- 🎮 Playing **video games**
 
 ---
 
