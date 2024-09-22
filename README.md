@@ -1,7 +1,7 @@
 
 
 [Home](https://ruzgarertuyun.github.io) | 
-[CS50](https://ruzgarertuyun.github.io/CSP.html) | 
+[CSP](https://ruzgarertuyun.github.io/CSP.html) | 
 [Projects](https://ruzgarertuyun.github.io/Projects.html) | 
 [Develop in Swift](https://ruzgarertuyun.github.io/Develop-in-Swift.html)
 
