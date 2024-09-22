@@ -1,4 +1,4 @@
-# Ruzgar Ertuyun
+
 
 [Home](https://ruzgarertuyun.github.io) | 
 [CS50](https://ruzgarertuyun.github.io/CSP.html) | 
