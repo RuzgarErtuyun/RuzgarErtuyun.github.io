@@ -14,7 +14,7 @@
         }
         h1 {
             color: #2c3e50;
-            text-align: left; /* Explicitly set to left */
+            text-align: left;
         }
         h2 {
             color: #2980b9;
@@ -28,6 +28,22 @@
             padding: 10px;
             border-left: 5px solid #3498db;
         }
+        details {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #eee;
+            padding: 15px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+            font-family: 'Courier New', Courier, monospace;
+        }
     </style>
 </head>
 <body>
@@ -40,13 +56,176 @@
         <a href="https://youtu.be/CE2HbU2JF3s">AP CSP PORTFOLIO VIDEO</a>
     </h1>
 
+    <details>
+        <summary>AP CSP Portfolio Code</summary>
+        <pre>
+import SwiftUI
+
+struct ContentView: View {
+    @State var numbers: [Int] = [1, 2, 3, 6, 12, 17, 31, 33, 42, 45, 56, 67, 68, 69, 73, 75, 77, 78, 80, 91, 92, 94, 99, 100]
+    @State var targetNumber: Int = -1
+    @State var guess: Int = 0
+    @State var feedback: String = "Press Start to begin!"
+    @State var guessCount: Int = 0
+    @State var hint: String = ""
+    @State var newNumberInput: String = ""
+
+    var body: some View {
+        VStack(spacing: 30) {
+            Text("Number Guessing Game")
+                .font(.largeTitle)
+                .bold()
+
+            Text("There are \(countNumbers()) numbers in the game.")
+                .font(.subheadline)
+            Text("You guessed \(guessCount) times")
+
+            Text("Your Guess: \(guess)")
+                .font(.title)
+
+            Text(feedback)
+                .font(.title2)
+                .foregroundColor(.blue)
+
+            if !hint.isEmpty {
+                Text("Hint: \(hint)")
+                    .font(.headline)
+                    .foregroundColor(.orange)
+            }
+
+            HStack(spacing: 40) {
+                Button(action: {
+                    guess += 1
+                }, label: {
+                    Text("^")
+                        .font(.largeTitle)
+                })
+
+                Button(action: {
+                    guess -= 1
+                }, label: {
+                    Text("v")
+                        .font(.largeTitle)
+                })
+            }
+
+            Button(action: {
+                checkGuess()
+            }, label: {
+                Text("Submit Guess")
+                    .font(.title2)
+            })
+            .buttonStyle(.borderedProminent)
+
+            Button(action: {
+                startGame()
+            }, label: {
+                Text("Start / Reset")
+                    .font(.title2)
+            })
+            .buttonStyle(.bordered)
+
+            Divider()
+
+            VStack(spacing: 15) {
+                Text("Add a new number:")
+                    .font(.headline)
+
+                TextField("Enter number", text: $newNumberInput)
+                    .textFieldStyle(.roundedBorder)
+                    .keyboardType(.numberPad)
+                    .frame(width: 200)
+
+                Button(action: {
+                    addNewNumber()
+                }, label: {
+                    Text("Add Number")
+                        .font(.title3)
+                })
+                .buttonStyle(.bordered)
+            }
+        }
+        .padding()
+    }
+
+    func countNumbers() -> Int {
+        var count = 0
+        for _ in numbers {
+            count += 1
+        }
+        return count
+    }
+
+    func startGame() {
+        if let randomNumber = numbers.randomElement() {
+            targetNumber = randomNumber
+            guess = 0
+            feedback = "Game Started! Make your guess."
+            guessCount = 0
+            hint = ""
+        }
+    }
+
+    func checkGuess() {
+        guard targetNumber != -1 else {
+            feedback = "Press Start to begin the game."
+            return
+        }
+
+        guessCount += 1
+
+        if guess == targetNumber {
+            feedback = "🎉 Correct! You guessed the number!"
+            hint = ""
+        } else if guess < targetNumber {
+            feedback = "Too low. Try a higher number."
+        } else {
+            feedback = "Too high. Try a lower number."
+        }
+
+        if guessCount % 2 == 0 {
+            provideHint()
+        }
+    }
+
+    func provideHint() {
+        var hintList: [String] = []
+
+        if targetNumber % 2 == 0 {
+            hintList.append("The number is even.")
+        } else {
+            hintList.append("The number is odd.")
+        }
+
+        if isPrime(targetNumber) {
+            hintList.append("The number is prime.")
+        } else {
+            hintList.append("The number is not prime.")
+        }
+
+        hint = hintList.randomElement() ?? ""
+    }
+
+    func isPrime(_ n: Int) -> Bool {
+        if n < 2 { return false }
+        for i in 2..<Int(Double(n).squareRoot()) + 1 {
+            if n % i == 0 {
+                return false
+            }
+        }
+        return true
+    }
+
+    func addNewNumber() {
+        if let newNumber = Int(newNumberInput) {
+            numbers.append(newNumber)
+            newNumberInput = ""
+        }
+    }
+}
+        </pre>
+    </details>
+
 </body>
 </html>
-
-    <a href="https://scratch.mit.edu/projects/1063418791/">Scratch connect 4</a>
-</h1>
-
-</body>
-</html>
-
 
