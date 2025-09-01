@@ -8,7 +8,7 @@
 
 ## About Me
 
-Hello! My name is **Ruzgar Ertuyun**, and I am a student at Hisar in Türkiye. I have a passion for coding and have chosen to study **AP CSP** this year (2024) to further my knowledge in computer science.
+Hello! My name is **Ruzgar Ertuyun**, and I am a student at Hisar in Türkiye. I have a passion for coding and have chosen to study **AP CSA** this year (2025) to further my knowledge in computer science.
 
 ---
 
