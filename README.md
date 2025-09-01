@@ -2,6 +2,8 @@
 
 [HOME](https://ruzgarertuyun.github.io) | 
 [DOCUMENTATION](https://ruzgarertuyun.github.io/Documentation.html) | 
+[PROJECTS](https://ruzgarertuyun.github.io/Projects) | 
+[BIG-IDEAS](https://ruzgarertuyun.github.io/Big-Ideas) | 
 
 
 ---
