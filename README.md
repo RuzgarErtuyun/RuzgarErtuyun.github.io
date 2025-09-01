@@ -1,9 +1,8 @@
 
 
-[Home](https://ruzgarertuyun.github.io) | 
-[CSP](https://ruzgarertuyun.github.io/CSP.html) | 
-[Projects](https://ruzgarertuyun.github.io/Projects.html) | 
-[Develop in Swift](https://ruzgarertuyun.github.io/Develop-in-Swift.html)
+[HOME](https://ruzgarertuyun.github.io) | 
+[DOCUMENTATION](https://ruzgarertuyun.github.io/Documentation.html) | 
+
 
 ---
 
