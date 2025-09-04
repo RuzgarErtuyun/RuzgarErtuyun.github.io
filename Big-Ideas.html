@@ -10,13 +10,36 @@
       color: #333;
       line-height: 1.6;
       margin: 0;
-      padding: 0 20px;
+      padding: 0;
+    }
+    /* Navbar */
+    nav {
+      background: #005f99;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      font-size: 1.1em;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 5px;
+    }
+    nav a:hover {
+      color: #ffdd57;
+      border-bottom: 2px solid #ffdd57;
+    }
+    nav a.active {
+      color: #ffdd57;
+      border-bottom: 2px solid #ffdd57;
     }
     h1 {
       text-align: center;
       font-size: 3em;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      margin: 30px 0 10px;
       color: #222;
       letter-spacing: 2px;
     }
@@ -25,8 +48,11 @@
       margin-top: 25px;
       font-size: 1.8em;
     }
-    p {
-      margin: 8px 0;
+    h3 {
+      margin-top: 20px;
+      color: #444;
+    }
+    p, li {
       font-size: 1.1em;
     }
     code {
@@ -43,9 +69,20 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+    ul {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="https://ruzgarertuyun.github.io">HOME</a>
+    <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a>
+    <a href="https://ruzgarertuyun.github.io/Projects.html">PROJECTS</a>
+    <a href="https://ruzgarertuyun.github.io/Big-Ideas.html" class="active">BIG-IDEAS</a>
+  </nav>
+
   <h1>BIG-IDEAS</h1>
 
   <div class="section">
@@ -70,6 +107,37 @@
     <p>An instruction manual is a good example of documentation.</p>
     <p>An API is like an instruction manual.</p>
   </div>
+
+  <div class="section">
+    <h2>Java Keywords</h2>
+    <ul>
+      <li><strong>public</strong> → Can be accessed from anywhere in the program.</li>
+      <li><strong>class</strong> → A blueprint for objects in Java; all code must be inside a class.</li>
+      <li><strong>static</strong> → Belongs to the class itself, not to any object.</li>
+      <li><strong>void</strong> → A method that doesn’t return a value.</li>
+      <li><strong>main</strong> → The starting point of a Java program.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skill #2 – API</h2>
+    <p><strong>API (Application Programming Interface):</strong> Documentation that explains what a library can do and how to use its methods—like an instruction manual for code.</p>
+  </div>
+
+  <div class="section">
+    <h2>1.5–1.9 (Incrementing a Variable)</h2>
+    <p>These all mean the same thing:</p>
+    <pre><code>a = a + 1;
+a += 1;
+a++;
+</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>Input</h2>
+    <p>To read user input, use:</p>
+    <pre><code>Scanner in = new Scanner(System.in);
+</code></pre>
+  </div>
 </body>
 </html>
-
