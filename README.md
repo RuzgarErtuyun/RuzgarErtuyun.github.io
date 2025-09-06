@@ -1,8 +1,8 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Home</title>
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -36,16 +36,9 @@
       color: #ffdd57;
       border-bottom: 2px solid #ffdd57;
     }
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      margin: 30px 0 10px;
-      color: #222;
-      letter-spacing: 1px;
-    }
     h2 {
       color: #005f99;
-      margin-top: 20px;
+      margin-top: 25px;
       font-size: 1.8em;
     }
     p, li {
@@ -60,11 +53,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin: 8px 0;
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -77,11 +66,10 @@
     <a href="https://ruzgarertuyun.github.io/Big-Ideas.html">BIG-IDEAS</a>
   </nav>
 
-  <h1>Welcome to My Homepage</h1>
-
   <div class="section">
     <h2>About Me</h2>
-    <p>Hello! My name is <strong>Ruzgar Ertuyun</strong>, and I am a student at Hisar in Türkiye. I have a passion for coding and have chosen to study <strong>AP CSA</strong> this year (2025) to further my knowledge in computer science.</p>
+    <p>Hello! My name is <strong>Ruzgar Ertuyun</strong>, and I am a student at Hisar in Türkiye. 
+    I have a passion for coding and have chosen to study <strong>AP CSA</strong> this year (2025) to further my knowledge in computer science.</p>
   </div>
 
   <div class="section">
