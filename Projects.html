@@ -2,128 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Ruzgar Ertuyun</title>
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9fb;
-      color: #333;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
-    /* Navbar */
+
     nav {
-      background: #005f99;
+      background-color: #222;
       padding: 15px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+
     nav a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 15px;
-      font-size: 1.1em;
-      transition: color 0.3s, border-bottom 0.3s;
-      padding-bottom: 5px;
     }
+
     nav a:hover {
-      color: #ffdd57;
-      border-bottom: 2px solid #ffdd57;
+      text-decoration: underline;
     }
-    nav a.active {
-      color: #ffdd57;
-      border-bottom: 2px solid #ffdd57;
+
+    main {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
     }
+
     h1 {
       text-align: center;
       font-size: 2.5em;
-      margin: 30px 0 10px;
-      color: #222;
-      letter-spacing: 1px;
+      margin-bottom: 20px;
     }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    .card {
-      background: #fff;
-      padding: 20px;
+
+    .project {
+      background: white;
       border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    .project h2 {
+      margin-top: 0;
     }
-    .card a {
+
+    .project a {
       display: inline-block;
       margin-top: 10px;
-      text-decoration: none;
+      color: #007BFF;
       font-weight: bold;
-      color: #005f99;
-      transition: color 0.3s;
+      text-decoration: none;
     }
-    .card a:hover {
-      color: #ff9900;
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    details {
+      margin-top: 10px;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
   <nav>
-    <a href="https://ruzgarertuyun.github.io">HOME</a>
-    <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a>
-    <a href="https://ruzgarertuyun.github.io/Projects.html" class="active">PROJECTS</a>
+    <a href="https://ruzgarertuyun.github.io">HOME</a> | 
+    <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a> | 
+    <a href="https://ruzgarertuyun.github.io/Projects.html">PROJECTS</a> | 
     <a href="https://ruzgarertuyun.github.io/Big-Ideas.html">BIG-IDEAS</a>
   </nav>
 
-  <h1>Projects</h1>
+  <main>
+    <h1>My Projects</h1>
 
-  <div class="projects">
-    <div class="card">
+    <div class="project">
       <h2>NASA</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/nasa" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/nasa" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>Day of the Week</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/day-of-the-week" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/day-of-the-week" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>Ice Cream</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/icecream" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/icecream" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>Calculations</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/calculations" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/calculations" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>BMI Calculation</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/bmi-calculation" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/bmi-calculation" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>Area of a Triangle</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/areaoftriangle" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/areaoftriangle" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>ThreeSort</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/three-sort" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/three-sort" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>CarPaymentCalc</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/carloan" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/carloan" target="_blank">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="project">
       <h2>EuclideanDistanceCalc</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/euclideandistance" target="_blank">View Project →</a>
+      <a href="https://codehs.com/sandbox/scarletdove9153/euclideandistance" target="_blank">View Project</a>
     </div>
-  </div>
+
+    <div class="project">
+      <h2>a-b-c Calculations</h2>
+      <details>
+        <summary>Show Code Images</summary>
+        <img src="abc1.jpg" alt="a-b-c Calculations Code Page 1">
+        <img src="abc2.jpg" alt="a-b-c Calculations Code Page 2">
+      </details>
+      <br>
+      <a href="https://codehs.com/sandbox/scarletdove9153/java-kagt" target="_blank">View Project</a>
+    </div>
+
+  </main>
 </body>
 </html>
