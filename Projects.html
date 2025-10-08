@@ -31,7 +31,7 @@
 
     main {
       padding: 40px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -78,6 +78,51 @@
       max-width: 100%;
       border-radius: 5px;
       margin-top: 10px;
+    }
+
+    /* Notes Section */
+    .notes-section {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .notes-section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .notes-section h3 {
+      color: #222;
+      margin-top: 25px;
+    }
+
+    .notes-section code, pre {
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 8px;
+      display: block;
+      overflow-x: auto;
+    }
+
+    .notes-section table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .notes-section th, .notes-section td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .notes-section th {
+      background-color: #eaeaea;
     }
   </style>
 </head>
@@ -153,49 +198,96 @@
       <a href="https://codehs.com/sandbox/scarletdove9153/trig" target="_blank">View Project</a>
     </div>
 
-    <div class="project">
-      <h2>Barycenter</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/barycenter" target="_blank">View Project</a>
-    </div>
+    <div class="notes-section">
+      <h2>CodeHS Big Idea 2 – Selection and Iteration</h2>
 
-    <div class="project">
-      <h2>CubicDiscrinant</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/cubic-discriminant" target="_blank">View Project</a>
-    </div>
+      <h3>2.1 Algorithms with Selection and Iteration</h3>
+      <p><strong>Keywords:</strong> Algorithm, Selection, Iteration</p>
+      <ul>
+        <li><strong>Algorithm</strong> → A step-by-step process to solve a problem.</li>
+        <li><strong>Selection</strong> → Choosing between paths using conditions (<code>if</code> statements).</li>
+        <li><strong>Iteration</strong> → Repeating actions using loops (<code>while</code>, <code>for</code>).</li>
+      </ul>
+      <pre><code>if (grade >= 90) {
+    System.out.println("A");
+} else {
+    System.out.println("Not A");
+}</code></pre>
 
-    <div class="project">
-      <h2>Ordered</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/order" target="_blank">View Project</a>
-    </div>
+      <pre><code>while (count < 5) {
+    System.out.println(count);
+    count++;
+}</code></pre>
 
-    <div class="project">
-      <h2>RGBtoYIQ</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/rgbtoyiq" target="_blank">View Project</a>
-    </div>
+      <p>✅ Selection: program chooses what to do.<br>
+      ✅ Iteration: repeats actions efficiently.</p>
 
-    <div class="project">
-      <h2>CMYKtoRGB</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/cmyktorgb" target="_blank">View Project</a>
-    </div>
+      <h3>2.2 If Statements and Control Flow</h3>
+      <p><strong>Keywords:</strong> if, else if, else, control flow</p>
+      <pre><code>if (x > 0) {
+    System.out.println("Positive");
+}</code></pre>
 
-    <div class="project">
-      <h2>FibonacciWord</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/fibonacciword" target="_blank">View Project</a>
-    </div>
+      <pre><code>if (x > 0) {
+    System.out.println("Positive");
+} else {
+    System.out.println("Negative or zero");
+}</code></pre>
 
-    <div class="project">
-      <h2>Divisibleby7</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/divisibleby7-1" target="_blank">View Project</a>
-    </div>
+      <pre><code>if (score >= 90) {
+    System.out.println("A");
+} else if (score >= 80) {
+    System.out.println("B");
+} else {
+    System.out.println("C or below");
+}</code></pre>
 
-    <div class="project">
-      <h2>EQtoHorizontal</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/equatorial-to-horizontal" target="_blank">View Project</a>
-    </div>
+      <p>Control Flow → determines which part of the program runs.</p>
 
-    <div class="project">
-      <h2>CarandTurtle</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/turtle" target="_blank">View Project</a>
+      <h3>2.3 Boolean Expressions</h3>
+      <p><strong>Keywords:</strong> Boolean, Relational operators</p>
+      <table>
+        <tr><th>Operator</th><th>Meaning</th><th>Example</th><th>Result</th></tr>
+        <tr><td>==</td><td>equals</td><td>x == 3</td><td>true if x is 3</td></tr>
+        <tr><td>!=</td><td>not equal</td><td>x != 3</td><td>true if x isn’t 3</td></tr>
+        <tr><td>&gt;</td><td>greater than</td><td>x &gt; 5</td><td>true if x &gt; 5</td></tr>
+        <tr><td>&lt;</td><td>less than</td><td>x &lt; 10</td><td>true if x &lt; 10</td></tr>
+        <tr><td>&gt;=</td><td>greater or equal</td><td>x &gt;= 10</td><td>true if 10 or more</td></tr>
+        <tr><td>&lt;=</td><td>less or equal</td><td>x &lt;= 5</td><td>true if 5 or less</td></tr>
+      </table>
+
+      <h3>2.4 Compound Boolean Expressions</h3>
+      <p><strong>Keywords:</strong> AND, OR, NOT</p>
+      <pre><code>if (age > 12 && age < 20) {
+    System.out.println("Teenager");
+}
+if (!(x > 0)) {
+    System.out.println("x is not positive");
+}</code></pre>
+
+      <h3>2.5 De Morgan’s Laws</h3>
+      <p><strong>Keywords:</strong> Simplifying logic, Negating compound conditions</p>
+      <p>1️⃣ !(A && B) → !A || !B<br>
+         2️⃣ !(A || B) → !A && !B</p>
+      <pre><code>!(x > 0 && y > 0)  →  x <= 0 || y <= 0
+!(x < 10 || y < 10) →  x >= 10 && y >= 10</code></pre>
+
+      <h3>2.6 Comparing Boolean Expressions</h3>
+      <p><strong>Keywords:</strong> Equivalent expressions, Simplification</p>
+      <pre><code>!(isCritical && !(isLogged || isResponded))
+is equivalent to
+!isCritical || isLogged || isResponded</code></pre>
+
+      <h3>💡 Summary Table</h3>
+      <table>
+        <tr><th>Concept</th><th>Keyword</th><th>Example</th><th>Purpose</th></tr>
+        <tr><td>2.1</td><td>Selection & Iteration</td><td>if, while</td><td>Decisions & loops</td></tr>
+        <tr><td>2.2</td><td>Control Flow</td><td>if-else</td><td>Changes program path</td></tr>
+        <tr><td>2.3</td><td>Boolean Expression</td><td>x &gt; 5</td><td>True/False condition</td></tr>
+        <tr><td>2.4</td><td>Compound Boolean</td><td>&amp;&amp;, ||, !</td><td>Combines conditions</td></tr>
+        <tr><td>2.5</td><td>De Morgan’s Laws</td><td>!(A &amp;&amp; B) → !A || !B</td><td>Simplifies logic</td></tr>
+        <tr><td>2.6</td><td>Compare Expressions</td><td>!(A &amp;&amp; !B) ↔ !A || B</td><td>Finds equivalence</td></tr>
+      </table>
     </div>
 
   </main>
