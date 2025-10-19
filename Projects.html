@@ -184,6 +184,7 @@
 
   <div class="notes">
     <h2>CodeHS Big Idea 2 Notes</h2>
+
     <p><b>2.1 Algorithms with Selection and Iteration</b></p>
 <pre>
 Algorithm → A step-by-step process to solve a problem.
@@ -204,7 +205,7 @@ while (count < 5) {
 }
 </pre>
 
-<p><b>2.2 If Statements and Control Flow</b></p>
+    <p><b>2.2 If Statements and Control Flow</b></p>
 <pre>
 if (x > 0) {
     System.out.println("Positive");
@@ -219,12 +220,12 @@ if (score >= 90) {
 }
 </pre>
 
-<p><b>2.3 Boolean Expressions</b></p>
+    <p><b>2.3 Boolean Expressions</b></p>
 <pre>
 boolean passing = score >= 60;
 </pre>
 
-<p><b>2.4 Compound Boolean Expressions</b></p>
+    <p><b>2.4 Compound Boolean Expressions</b></p>
 <pre>
 if (age > 12 && age < 20) {
     System.out.println("Teenager");
@@ -234,17 +235,69 @@ if (!(x > 0)) {
 }
 </pre>
 
-<p><b>2.5 De Morgan’s Laws</b></p>
+    <p><b>2.5 De Morgan’s Laws</b></p>
 <pre>
 !(x > 0 && y > 0) → x <= 0 || y <= 0  
 !(x < 10 || y < 10) → x >= 10 && y >= 10
 </pre>
 
-<p><b>2.6 Comparing Boolean Expressions</b></p>
+    <p><b>2.6 Comparing Boolean Expressions</b></p>
 <pre>
 !(isCritical && !(isLogged || isResponded))
 !isCritical || isLogged || isResponded
 </pre>
+
+    <p><b>2.7 while Loops</b></p>
+<pre>
+int count = 0;
+while(count < 5) {
+    System.out.println(count);
+    count++;
+}
+</pre>
+
+    <p><b>2.8 for Loops</b></p>
+<pre>
+for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+</pre>
+
+    <p><b>2.9 Implementing Selection and Iteration Algorithms</b></p>
+<pre>
+for(int i = 1; i <= 10; i++) {
+    if(i % 2 == 0) {
+        System.out.println(i + " is even");
+    } else {
+        System.out.println(i + " is odd");
+    }
+}
+</pre>
+
+    <p><b>2.10 Implementing String Algorithms</b></p>
+<pre>
+String text = "CodeHS";
+for(int i = 0; i < text.length(); i++) {
+    System.out.println(text.charAt(i));
+}
+</pre>
+
+    <p><b>2.11 Nested Iteration</b></p>
+<pre>
+for(int i = 1; i <= 3; i++) {
+    for(int j = 1; j <= 2; j++) {
+        System.out.println("i=" + i + ", j=" + j);
+    }
+}
+</pre>
+
+    <p><b>2.12 Informal Run-Time Analysis</b></p>
+<pre>
+Single loop → O(n) // time grows linearly
+Nested loop → O(n^2) // time grows quadratically
+Helps predict performance without exact timing
+</pre>
+
   </div>
 
   <div class="progress">
