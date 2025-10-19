@@ -122,7 +122,7 @@
 
   <h1>My Projects</h1>
 
-  <!-- Projects Section -->
+  <!-- Projects Start -->
   <div class="project">
     <h2>NASA</h2>
     <a href="https://codehs.com/sandbox/scarletdove9153/nasa" target="_blank">View Project</a>
@@ -182,79 +182,149 @@
     <h2>Trig</h2>
     <a href="https://codehs.com/sandbox/scarletdove9153/trig" target="_blank">View Project</a>
   </div>
+  <!-- Projects End -->
 
-  <div class="project">
-    <h2>Divisible by 7</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/divisibleby7-1" target="_blank">View Project</a>
-  </div>
+  <!-- CodeHS Big Idea 1 Notes -->
+  <div class="notes">
+    <h2>CodeHS Big Idea 1 Notes</h2>
 
-  <div class="project">
-    <h2>Equatorial to Horizontal</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/equatorial-to-horizontal" target="_blank">View Project</a>
-  </div>
+    <p><b>1.1 Introduction to Algorithms, Programming, and Compilers</b></p>
+    <pre>
+Algorithm → Step-by-step procedure to solve a problem.
+Sequencing → Instructions executed in order.
+IDE → Tool to write, run, and debug code.
+Program start → public class and main() method.
+Output → System.out.println()
+Syntax → Statements end with ; and code blocks {}
+Compiler → Translates Java to bytecode, detects syntax errors.
+Logic errors → Runs but wrong results.
+Runtime errors → Crashes during execution.
+    </pre>
 
-  <div class="project">
-    <h2>Fibonacci Word</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/fibonacciword" target="_blank">View Project</a>
-  </div>
+    <p><b>1.2 Variables and Data Types</b></p>
+    <pre>
+Variable → Memory storage with name and type.
+Primitive types → int, double, boolean.
+Reference types → Objects like String.
+Strings → Sequence of characters, immutable.
+    </pre>
 
-  <div class="project">
-    <h2>RGB to YIQ</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/rgbtoyiq" target="_blank">View Project</a>
-  </div>
+    <p><b>1.3 Expressions and Output</b></p>
+    <pre>
+Literals → Fixed values like 42, "Hello".
+Operators → +, -, *, /, %
+Integer division → int ÷ int gives int; double ÷ int → double
+Remainder → %
+Operator precedence → * / % before + -
+Divide by 0 → ArithmeticException
+    </pre>
 
-  <div class="project">
-    <h2>CMYK to RGB</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/cmyktorgb" target="_blank">View Project</a>
-  </div>
+    <p><b>1.4 Assignment Statements and Input</b></p>
+    <pre>
+Assignment → = stores value
+Scanner → For user input
+Scanner in = new Scanner(System.in);
+int number = in.nextInt();
+    </pre>
 
-  <div class="project">
-    <h2>Order</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/order" target="_blank">View Project</a>
-  </div>
+    <p><b>1.5 Casting and Range of Variables</b></p>
+    <pre>
+Casting → (int), (double) to convert types
+double → int truncates decimals
+int in double expression → auto-widened
+Rounding → (int)(x + 0.5)
+Ranges → Integer.MAX_VALUE, Integer.MIN_VALUE
+Overflow → Wraparound
+Double rounding error → Approximation in decimal
+    </pre>
 
-  <div class="project">
-    <h2>Turtle</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/turtle" target="_blank">View Project</a>
-  </div>
+    <p><b>1.6 Compound Assignment Operators</b></p>
+    <pre>
+x++ → Increment x by 1
+x += y → x = x + y
+x *= y → x = x * y
+    </pre>
 
-  <div class="project">
-    <h2>Cubic Discriminant</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/cubic-discriminant" target="_blank">View Project</a>
-  </div>
+    <p><b>1.7 API and Libraries</b></p>
+    <pre>
+Library → Collection of classes
+API → Shows attributes + methods of classes
+Packages → Groups of related classes
+    </pre>
 
-  <div class="project">
-    <h2>Binary</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/binary" target="_blank">View Project</a>
-  </div>
+    <p><b>1.8 Documentation with Comments</b></p>
+    <pre>
+Single-line comment → // comment
+Multi-line comment → /* comment */
+Javadoc comment → /** comment */
+Preconditions → Must be true before a method runs
+Postconditions → Guaranteed true after method runs
+    </pre>
 
-  <div class="project">
-    <h2>Widening Narrowing</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/widening-narrowing" target="_blank">View Project</a>
-  </div>
+    <p><b>1.9 Method Signatures</b></p>
+    <pre>
+Method → Named block of code
+Parameters → Variables in definition
+Arguments → Values passed
+Call by value → Copies value
+Overloading → Same name, different parameters
+    </pre>
 
-  <div class="project">
-    <h2>Scrabble</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/scrabble" target="_blank">View Project</a>
-  </div>
+    <p><b>1.10 Calling Class Methods</b></p>
+    <pre>
+Static methods → Belong to class
+Syntax → ClassName.method()
+Return types → void → no value, others → value returned
+    </pre>
 
-  <div class="project">
-    <h2>BaryCenter</h2>
-    <a href="https://codehs.com/sandbox/scarletdove9153/barycenter" target="_blank">View Project</a>
+    <p><b>1.11 Math Class</b></p>
+    <pre>
+Static methods → Math.abs(), Math.pow(), Math.sqrt(), Math.random()
+Random integer in range → (int)(Math.random() * range) + min
+    </pre>
+
+    <p><b>1.12 Objects: Instances of Classes</b></p>
+    <pre>
+Class → Blueprint
+Object → Instance of class
+Attributes → Variables
+Methods → Behaviors
+All inherit from Object
+    </pre>
+
+    <p><b>1.13 Object Creation and Storage (Instantiation)</b></p>
+    <pre>
+Create objects → ClassName obj = new ClassName();
+Constructor → Special method same name as class
+Overloading constructors → Different parameters
+    </pre>
+
+    <p><b>1.14 Calling Instance Methods</b></p>
+    <pre>
+Syntax → object.method()
+Null object → NullPointerException if calling a method
+    </pre>
+
+    <p><b>1.15 String Manipulation</b></p>
+    <pre>
+String → Immutable object
+Concatenation → + or +=
+Common methods:
+length(), substring(start,end), indexOf(), equals(), compareTo()
+Indexing starts at 0
+    </pre>
   </div>
 
   <!-- CodeHS Big Idea 2 Notes -->
   <div class="notes">
     <h2>CodeHS Big Idea 2 Notes</h2>
-
     <p><b>2.1 Algorithms with Selection and Iteration</b></p>
-<pre>
+    <pre>
 Algorithm → A step-by-step process to solve a problem.
 Selection → Choosing between paths using conditions (if statements).
 Iteration → Repeating actions using loops (while, for).
-</pre>
-
-<pre>
+    </pre>
+    <pre>
 if (grade >= 90) {
     System.out.println("A");
 } else {
@@ -265,10 +335,9 @@ while (count < 5) {
     System.out.println(count);
     count++;
 }
-</pre>
-
+    </pre>
     <p><b>2.2 If Statements and Control Flow</b></p>
-<pre>
+    <pre>
 if (x > 0) {
     System.out.println("Positive");
 }
@@ -280,34 +349,75 @@ if (score >= 90) {
 } else {
     System.out.println("C or below");
 }
-</pre>
-
+    </pre>
     <p><b>2.3 Boolean Expressions</b></p>
-<pre>
+    <pre>
 boolean passing = score >= 60;
-</pre>
-
+    </pre>
     <p><b>2.4 Compound Boolean Expressions</b></p>
-<pre>
+    <pre>
 if (age > 12 && age < 20) {
     System.out.println("Teenager");
 }
 if (!(x > 0)) {
     System.out.println("x is not positive");
 }
-</pre>
-
+    </pre>
     <p><b>2.5 De Morgan’s Laws</b></p>
-<pre>
+    <pre>
 !(x > 0 && y > 0) → x <= 0 || y <= 0  
 !(x < 10 || y < 10) → x >= 10 && y >= 10
-</pre>
-
+    </pre>
     <p><b>2.6 Comparing Boolean Expressions</b></p>
-<pre>
+    <pre>
 !(isCritical && !(isLogged || isResponded))
 !isCritical || isLogged || isResponded
-</pre>
+    </pre>
+    <p><b>2.7 while Loops</b></p>
+    <pre>
+int count = 0;
+while(count < 5) {
+    System.out.println(count);
+    count++;
+}
+    </pre>
+    <p><b>2.8 for Loops</b></p>
+    <pre>
+for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+    </pre>
+    <p><b>2.9 Implementing Selection and Iteration Algorithms</b></p>
+    <pre>
+for(int i = 1; i <= 10; i++) {
+    if(i % 2 == 0) {
+        System.out.println(i + " is even");
+    } else {
+        System.out.println(i + " is odd");
+    }
+}
+    </pre>
+    <p><b>2.10 Implementing String Algorithms</b></p>
+    <pre>
+String text = "CodeHS";
+for(int i = 0; i < text.length(); i++) {
+    System.out.println(text.charAt(i));
+}
+    </pre>
+    <p><b>2.11 Nested Iteration</b></p>
+    <pre>
+for(int i = 1; i <= 3; i++) {
+    for(int j = 1; j <= 2; j++) {
+        System.out.println("i=" + i + ", j=" + j);
+    }
+}
+    </pre>
+    <p><b>2.12 Informal Run-Time Analysis</b></p>
+    <pre>
+Single loop → O(n) // time grows linearly
+Nested loop → O(n^2) // time grows quadratically
+Helps predict performance without exact timing
+    </pre>
   </div>
 
   <div class="progress">
