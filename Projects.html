@@ -3,293 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Ruzgar Ertuyun</title>
+  <title>Projects | Ruzgar Ertuyun</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
       margin: 0;
       padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5em;
+      color: #2c3e50;
     }
 
     nav {
-      background-color: #222;
-      padding: 15px;
-      text-align: center;
+      background-color: #2c3e50;
+      padding: 15px 0;
+      margin-bottom: 30px;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      color: #1abc9c;
     }
 
     .project {
       background: white;
-      border-radius: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 25px auto;
       padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 85%;
+      max-width: 700px;
     }
 
     .project h2 {
-      margin-top: 0;
+      color: #2c3e50;
     }
 
-    .project a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #007BFF;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
-    }
-
-    details {
-      margin-top: 10px;
-    }
-
-    details summary {
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    /* Notes Section */
-    .notes-section {
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      padding: 30px;
-      margin-top: 40px;
-    }
-
-    .notes-section h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .notes-section h3 {
-      color: #222;
-      margin-top: 25px;
-    }
-
-    .notes-section code, pre {
-      background-color: #f4f4f4;
-      border-radius: 5px;
-      padding: 8px;
-      display: block;
-      overflow-x: auto;
-    }
-
-    .notes-section table {
+    .project img {
       width: 100%;
-      border-collapse: collapse;
+      border-radius: 10px;
       margin-top: 10px;
     }
 
-    .notes-section th, .notes-section td {
-      border: 1px solid #ccc;
-      padding: 8px;
+    .dropdown {
+      margin-top: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: #1abc9c;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    details[open] summary {
+      color: #16a085;
+    }
+
+    .notes {
+      background-color: #eef6f7;
+      border-left: 6px solid #1abc9c;
+      padding: 20px;
+      margin: 40px auto;
+      width: 85%;
+      max-width: 800px;
+      border-radius: 10px;
       text-align: left;
     }
 
-    .notes-section th {
-      background-color: #eaeaea;
+    .notes h2 {
+      color: #1a535c;
+    }
+
+    .notes pre {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .progress {
+      margin: 50px auto;
+      max-width: 700px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+
+    .progress img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
+
   <nav>
-    <a href="https://ruzgarertuyun.github.io">HOME</a> | 
-    <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a> | 
-    <a href="https://ruzgarertuyun.github.io/Projects.html">PROJECTS</a> | 
+    <a href="https://ruzgarertuyun.github.io">HOME</a> |
+    <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a> |
+    <a href="https://ruzgarertuyun.github.io/Projects.html">PROJECTS</a> |
     <a href="https://ruzgarertuyun.github.io/Big-Ideas.html">BIG-IDEAS</a>
   </nav>
 
-  <main>
-    <h1>My Projects</h1>
+  <h1>My Projects</h1>
 
-    <div class="project">
-      <h2>NASA</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/nasa" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>NASA</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/nasa" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>Day of the Week</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/day-of-the-week" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>Day of the Week</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/day-of-the-week" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>Ice Cream</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/icecream" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>Ice Cream</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/icecream" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>Calculations</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/calculations" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>Calculations</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/calculations" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>BMI Calculation</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/bmi-calculation" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>BMI Calculation</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/bmi-calculation" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>Area of a Triangle</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/areaoftriangle" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>Area of a Triangle</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/areaoftriangle" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>ThreeSort</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/three-sort" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>ThreeSort</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/three-sort" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>CarPaymentCalc</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/carloan" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>CarPaymentCalc</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/carloan" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>EuclideanDistanceCalc</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/euclideandistance" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>EuclideanDistanceCalc</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/euclideandistance" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>a-b-c Calculations</h2>
-      <details>
-        <summary>Show Code Images</summary>
-        <img src="abc1.jpg" alt="a-b-c Calculations Code Page 1">
-        <img src="abc2.jpg" alt="a-b-c Calculations Code Page 2">
-      </details>
-      <br>
-      <a href="https://codehs.com/sandbox/scarletdove9153/java-kagt" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>a-b-c Calculations</h2>
+    <details class="dropdown">
+      <summary>View Image</summary>
+      <img src="abc1.jpg" alt="a-b-c Calculations Code Page 1">
+      <img src="abc2.jpg" alt="a-b-c Calculations Code Page 2">
+    </details>
+    <a href="https://codehs.com/sandbox/scarletdove9153/java-kagt" target="_blank">View Project</a>
+  </div>
 
-    <div class="project">
-      <h2>Trig</h2>
-      <a href="https://codehs.com/sandbox/scarletdove9153/trig" target="_blank">View Project</a>
-    </div>
+  <div class="project">
+    <h2>Trig</h2>
+    <a href="https://codehs.com/sandbox/scarletdove9153/trig" target="_blank">View Project</a>
+  </div>
 
-    <div class="notes-section">
-      <h2>CodeHS Big Idea 2 – Selection and Iteration</h2>
+  <div class="notes">
+    <h2>CodeHS Big Idea 2 Notes</h2>
+    <p><b>2.1 Algorithms with Selection and Iteration</b></p>
+<pre>
+Algorithm → A step-by-step process to solve a problem.
+Selection → Choosing between paths using conditions (if statements).
+Iteration → Repeating actions using loops (while, for).
+</pre>
 
-      <h3>2.1 Algorithms with Selection and Iteration</h3>
-      <p><strong>Keywords:</strong> Algorithm, Selection, Iteration</p>
-      <ul>
-        <li><strong>Algorithm</strong> → A step-by-step process to solve a problem.</li>
-        <li><strong>Selection</strong> → Choosing between paths using conditions (<code>if</code> statements).</li>
-        <li><strong>Iteration</strong> → Repeating actions using loops (<code>while</code>, <code>for</code>).</li>
-      </ul>
-      <pre><code>if (grade >= 90) {
+<pre>
+if (grade >= 90) {
     System.out.println("A");
 } else {
     System.out.println("Not A");
-}</code></pre>
+}
 
-      <pre><code>while (count < 5) {
+while (count < 5) {
     System.out.println(count);
     count++;
-}</code></pre>
+}
+</pre>
 
-      <p>✅ Selection: program chooses what to do.<br>
-      ✅ Iteration: repeats actions efficiently.</p>
-
-      <h3>2.2 If Statements and Control Flow</h3>
-      <p><strong>Keywords:</strong> if, else if, else, control flow</p>
-      <pre><code>if (x > 0) {
+<p><b>2.2 If Statements and Control Flow</b></p>
+<pre>
+if (x > 0) {
     System.out.println("Positive");
-}</code></pre>
+}
 
-      <pre><code>if (x > 0) {
-    System.out.println("Positive");
-} else {
-    System.out.println("Negative or zero");
-}</code></pre>
-
-      <pre><code>if (score >= 90) {
+if (score >= 90) {
     System.out.println("A");
 } else if (score >= 80) {
     System.out.println("B");
 } else {
     System.out.println("C or below");
-}</code></pre>
+}
+</pre>
 
-      <p>Control Flow → determines which part of the program runs.</p>
+<p><b>2.3 Boolean Expressions</b></p>
+<pre>
+boolean passing = score >= 60;
+</pre>
 
-      <h3>2.3 Boolean Expressions</h3>
-      <p><strong>Keywords:</strong> Boolean, Relational operators</p>
-      <table>
-        <tr><th>Operator</th><th>Meaning</th><th>Example</th><th>Result</th></tr>
-        <tr><td>==</td><td>equals</td><td>x == 3</td><td>true if x is 3</td></tr>
-        <tr><td>!=</td><td>not equal</td><td>x != 3</td><td>true if x isn’t 3</td></tr>
-        <tr><td>&gt;</td><td>greater than</td><td>x &gt; 5</td><td>true if x &gt; 5</td></tr>
-        <tr><td>&lt;</td><td>less than</td><td>x &lt; 10</td><td>true if x &lt; 10</td></tr>
-        <tr><td>&gt;=</td><td>greater or equal</td><td>x &gt;= 10</td><td>true if 10 or more</td></tr>
-        <tr><td>&lt;=</td><td>less or equal</td><td>x &lt;= 5</td><td>true if 5 or less</td></tr>
-      </table>
-
-      <h3>2.4 Compound Boolean Expressions</h3>
-      <p><strong>Keywords:</strong> AND, OR, NOT</p>
-      <pre><code>if (age > 12 && age < 20) {
+<p><b>2.4 Compound Boolean Expressions</b></p>
+<pre>
+if (age > 12 && age < 20) {
     System.out.println("Teenager");
 }
 if (!(x > 0)) {
     System.out.println("x is not positive");
-}</code></pre>
+}
+</pre>
 
-      <h3>2.5 De Morgan’s Laws</h3>
-      <p><strong>Keywords:</strong> Simplifying logic, Negating compound conditions</p>
-      <p>1️⃣ !(A && B) → !A || !B<br>
-         2️⃣ !(A || B) → !A && !B</p>
-      <pre><code>!(x > 0 && y > 0)  →  x <= 0 || y <= 0
-!(x < 10 || y < 10) →  x >= 10 && y >= 10</code></pre>
+<p><b>2.5 De Morgan’s Laws</b></p>
+<pre>
+!(x > 0 && y > 0) → x <= 0 || y <= 0  
+!(x < 10 || y < 10) → x >= 10 && y >= 10
+</pre>
 
-      <h3>2.6 Comparing Boolean Expressions</h3>
-      <p><strong>Keywords:</strong> Equivalent expressions, Simplification</p>
-      <pre><code>!(isCritical && !(isLogged || isResponded))
-is equivalent to
-!isCritical || isLogged || isResponded</code></pre>
+<p><b>2.6 Comparing Boolean Expressions</b></p>
+<pre>
+!(isCritical && !(isLogged || isResponded))
+!isCritical || isLogged || isResponded
+</pre>
+  </div>
 
-      <h3>💡 Summary Table</h3>
-      <table>
-        <tr><th>Concept</th><th>Keyword</th><th>Example</th><th>Purpose</th></tr>
-        <tr><td>2.1</td><td>Selection & Iteration</td><td>if, while</td><td>Decisions & loops</td></tr>
-        <tr><td>2.2</td><td>Control Flow</td><td>if-else</td><td>Changes program path</td></tr>
-        <tr><td>2.3</td><td>Boolean Expression</td><td>x &gt; 5</td><td>True/False condition</td></tr>
-        <tr><td>2.4</td><td>Compound Boolean</td><td>&amp;&amp;, ||, !</td><td>Combines conditions</td></tr>
-        <tr><td>2.5</td><td>De Morgan’s Laws</td><td>!(A &amp;&amp; B) → !A || !B</td><td>Simplifies logic</td></tr>
-        <tr><td>2.6</td><td>Compare Expressions</td><td>!(A &amp;&amp; !B) ↔ !A || B</td><td>Finds equivalence</td></tr>
-      </table>
-    </div>
+  <div class="progress">
+    <h2>CodeHS Progress</h2>
+    <img src="codehs_progress.png" alt="CodeHS Progress">
+  </div>
 
-  </main>
 </body>
 </html>
