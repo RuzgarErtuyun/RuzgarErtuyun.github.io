@@ -434,36 +434,103 @@ Helps predict performance without exact timing
     <h2>CodeHS Progress</h2>
     <img src="codehs_progress.png" alt="CodeHS Progress">
   </div>
-<!-- Conditionals and Loops Princeton -->
+<!-- Conditionals and Loops Princeton Detailed -->
 <div class="notes">
   <details>
-    <summary>Conditionals and Loops Princeton</summary>
+    <summary>Conditionals and Loops Princeton – Detailed Answers</summary>
     <ol>
-      <li><span class="qnum">Q34:</span> Loaded dice – Choose second, since the chooser can always pick the die that beats the opponent’s.</li>
-      <li><span class="qnum">Q35:</span> Code fragment digits – Counts digits in base 10. Answer: Number of decimal digits in n.</li>
-      <li><span class="qnum">Q38:</span> Probability triangle – Random a,b,c from (0,1). Answer: Probability is 1/4. Need a+b>c, b+c>a, a+c>b.</li>
-      <li><span class="qnum">Q39:</span> Probability obtuse – Given triangle, probability obtuse. Answer: About 0.52 (slightly more than half).</li>
-      <li><span class="qnum">Q40:</span> Value of s – M = 987654321, appends digits reversed. Answer: s = "123456789".</li>
-      <li><span class="qnum">Q41:</span> Value of i – i = i++; i = ++i; i = i++ + ++i; Answer: i = 24.</li>
-      <li><span class="qnum">Q65:</span> Will it compile? – Uses assignment in if. Answer: Does not compile.</li>
-      <li><span class="qnum">Q66:</span> Gotcha 1 – Assigns a = true, prints yes. Answer: prints "yes".</li>
-      <li><span class="qnum">Q67:</span> Gotcha 2 – Semicolon after if creates empty statement. Answer: always prints 13.</li>
-      <li><span class="qnum">Q68:</span> Gotcha 3 – x += 0.5 casts to int. Answer: infinite loop printing 0.</li>
-      <li><span class="qnum">Q69:</span> Tax code problem – Multiple ifs. Answer: rate always ends up 0.22 for all incomes.</li>
-      <li><span class="qnum">Q52:</span> Circle output – Prints filled circle of stars inside radius 5.</li>
-      <li><span class="qnum">Q53:</span> Season program – Classifies date into 4 seasons.</li>
-      <li><span class="qnum">Q54:</span> Zodiac program – Prints zodiac based on month/day table ranges.</li>
-      <li><span class="qnum">Q55:</span> Muay Thai weight class – Uses weight to determine class.</li>
-      <li><span class="qnum">Q45:</span> Sorting network proof – Sequence of swaps sorts A ≤ B ≤ C ≤ D.</li>
-      <li><span class="qnum">Q83:</span> Compile check – double x; if(a>=0)x=3.14; if(a<0)x=2.71; Answer: Does not compile, x might not be initialized.</li>
-      <li><span class="qnum">Q72:</span> What is s after loop – Builds palindromic string depending on N.</li>
-      <li><span class="qnum">Q73:</span> BMI category – Compares BMI to ranges, outputs category.</li>
-      <li><span class="qnum">Q74:</span> Reynolds number – Compute d*v*rho/mu; prints laminar/transient/turbulent.</li>
-      <li><span class="qnum">Q75:</span> Wind chill conditions – Prints error if input outside valid range.</li>
-      <li><span class="qnum">Q83:</span> Reynolds compile check – Compiler cannot guarantee initialization. Answer: does not compile.</li>
+      <li><span class="qnum">Q34:</span> Loaded dice  
+        <b>Answer:</b> Choose second.  
+        <b>Explanation:</b> A beats B, B beats C, C beats A with probability 5/9 each; picking second lets you choose the die that beats the opponent’s.
+      </li>
+      <li><span class="qnum">Q35:</span> Code fragment digits  
+        <b>Answer:</b> Counts the number of decimal digits in n.  
+        <b>Explanation:</b> Repeatedly divides n by 10 until 0, incrementing digits.
+      </li>
+      <li><span class="qnum">Q38:</span> Probability triangle condition  
+        <b>Answer:</b> Probability = 1/4.  
+        <b>Explanation:</b> Random a, b, c in (0,1) form a triangle if each pair sums to more than the third.
+      </li>
+      <li><span class="qnum">Q39:</span> Probability obtuse triangle  
+        <b>Answer:</b> Approximately 0.52.  
+        <b>Explanation:</b> Given triangle, condition for obtuse triangle holds slightly more than half the time.
+      </li>
+      <li><span class="qnum">Q40:</span> Value of s (reverse digits)  
+        <b>Answer:</b> "123456789"  
+        <b>Explanation:</b> Builds a string from last digit to first by repeated % 10 extraction.
+      </li>
+      <li><span class="qnum">Q41:</span> Value of i (increment confusion)  
+        <b>Answer:</b> 24  
+        <b>Explanation:</b> Post-increment returns old value; pre-increment increments then returns. Final expression evaluates as 11 + 13 = 24.
+      </li>
+      <li><span class="qnum">Q42:</span> NPerLine simple  
+        <b>Answer:</b> Prints integers 10 to 99 with n per line.  
+        <b>Explanation:</b> Loop through numbers 10–99, insert newline after every n numbers.
+      </li>
+      <li><span class="qnum">Q43:</span> NPerLine formatted  
+        <b>Answer:</b> Prints 1–1000 with proper spacing.  
+        <b>Explanation:</b> Spaces added for alignment (1–9:3, 10–99:2, 100–999:1).
+      </li>
+      <li><span class="qnum">Q52:</span> Circle.java output  
+        <b>Answer:</b> Prints a filled circle of radius N using * inside and . outside.  
+        <b>Explanation:</b> Prints * if i*i + j*j <= N*N.
+      </li>
+      <li><span class="qnum">Q53:</span> Season program  
+        <b>Answer:</b> Maps month/day to correct season.  
+        <b>Explanation:</b> Compares (M,D) to ranges: Spring Mar21-Jun20, Summer Jun21-Sep22, etc.
+      </li>
+      <li><span class="qnum">Q54:</span> Zodiac program  
+        <b>Answer:</b> Prints Zodiac sign for (M,D).  
+        <b>Explanation:</b> Checks which interval (M,D) falls into using table.
+      </li>
+      <li><span class="qnum">Q55:</span> Muay Thai weight class  
+        <b>Answer:</b> Prints weight class for a given weight in pounds.  
+        <b>Explanation:</b> Simple range comparison using if/else or switch.
+      </li>
+      <li><span class="qnum">Q66:</span> Gotcha 1  
+        <b>Answer:</b> Prints "yes".  
+        <b>Explanation:</b> a = true assigns true; conditional evaluates true.
+      </li>
+      <li><span class="qnum">Q67:</span> Gotcha 2  
+        <b>Answer:</b> Always prints 13.  
+        <b>Explanation:</b> Semicolon after if ends the conditional; block always executes.
+      </li>
+      <li><span class="qnum">Q72:</span> s after palindrome loop  
+        <b>Answer:</b> Produces a palindrome string depending on N.  
+        <b>Explanation:</b> Even numbers append symmetrically, odd numbers wrap around.
+      </li>
+      <li><span class="qnum">Q73:</span> BMI category  
+        <b>Answer:</b> Prints category: Starvation, Underweight, Ideal, etc.  
+        <b>Explanation:</b> Compare BMI value to ranges.
+      </li>
+      <li><span class="qnum">Q74:</span> Reynolds number  
+        <b>Answer:</b> Prints laminar (<2000), transient (2000–4000), turbulent (>4000).  
+        <b>Explanation:</b> Compute d*v*rho/mu and compare.
+      </li>
+      <li><span class="qnum">Q75:</span> Wind chill valid range  
+        <b>Answer:</b> Prints error if speed <3 or >110 MPH, or temp < -50 or >50 °F.  
+        <b>Explanation:</b> Conditional check only.
+      </li>
+      <li><span class="qnum">Q76:</span> Powers of K  
+        <b>Answer:</b> Prints positive powers of K in long until exceeding Long.MAX_VALUE.  
+        <b>Explanation:</b> Multiply repeatedly by K.
+      </li>
+      <li><span class="qnum">Q77:</span> Palindrome.java (s-loop)  
+        <b>Answer:</b> Generates a palindrome string based on N.  
+        <b>Explanation:</b> Symmetric concatenation ensures string reads the same forward/backward.
+      </li>
+      <li><span class="qnum">Q45:</span> Sorting network 4 numbers  
+        <b>Answer:</b> Sequence of compare-exchanges sorts A ≤ B ≤ C ≤ D.  
+        <b>Explanation:</b> Each swap moves larger numbers right; final order guaranteed.
+      </li>
+      <li><span class="qnum">Q46:</span> Optimal 5-element sorting network  
+        <b>Answer:</b> Sorts 5 numbers using 9 compare-exchanges.  
+        <b>Explanation:</b> Apply swap sequence similar to 4-element network; guarantees A ≤ B ≤ C ≤ D ≤ E.
+      </li>
     </ol>
   </details>
 </div>
+
 
 </body>
 </html>
