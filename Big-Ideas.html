@@ -12,7 +12,6 @@
       margin: 0;
       padding: 0;
     }
-    /* Navbar */
     nav {
       background: #005f99;
       padding: 15px;
@@ -81,7 +80,6 @@
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
   <nav>
     <a href="https://ruzgarertuyun.github.io">HOME</a>
     <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a>
@@ -91,49 +89,43 @@
 
   <h1>BIG-IDEAS</h1>
 
-  <!-- Big Idea 1 Notes -->
   <div class="section">
     <h2>AP CSA Unit 1</h2>
-
     <h3>Algorithm</h3>
     <p>An algorithm is a step by step process to follow when completing a task or solving a problem.</p>
     <p>It is helpful to be very specific and detailed when writing algorithms.</p>
 
     <h3>Data Types</h3>
-    <p>There are many data types like <strong>integers</strong>, <strong>doubles</strong>, and <strong>booleans</strong>.</p>
-    <p>Integers are negative and positive whole numbers, doubles are real numbers, and booleans are <code>true</code> or <code>false</code>.</p>
+    <p>Integers are whole numbers, doubles are decimals, booleans are true/false.</p>
 
     <h3>Printing</h3>
-    <p>Use <code>System.out.print</code> for printing in Java.</p>
+    <p>Use <code>System.out.print()</code> to print in Java.</p>
 
     <h3>Comments</h3>
-    <p>Use <code>//</code> to add a comment in your code.</p>
+    <p>Use <code>//</code> for comments.</p>
 
     <h3>Documentation</h3>
-    <p>Documentation is important so that code is made clearer.</p>
-    <p>An instruction manual is a good example of documentation.</p>
-    <p>An API is like an instruction manual.</p>
+    <p>Documentation helps explain how code works—APIs are instruction manuals for code.</p>
   </div>
 
   <div class="section">
     <h2>Java Keywords</h2>
     <ul>
-      <li><strong>public</strong> → Can be accessed from anywhere in the program.</li>
-      <li><strong>class</strong> → A blueprint for objects in Java; all code must be inside a class.</li>
-      <li><strong>static</strong> → Belongs to the class itself, not to any object.</li>
-      <li><strong>void</strong> → A method that doesn’t return a value.</li>
-      <li><strong>main</strong> → The starting point of a Java program.</li>
+      <li><strong>public</strong> → accessible anywhere</li>
+      <li><strong>class</strong> → blueprint for objects</li>
+      <li><strong>static</strong> → belongs to class, not object</li>
+      <li><strong>void</strong> → returns no value</li>
+      <li><strong>main</strong> → program starting point</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>Skill #2 – API</h2>
-    <p><strong>API (Application Programming Interface):</strong> Documentation that explains what a library can do and how to use its methods—like an instruction manual for code.</p>
+    <p>Documentation describing available methods in libraries.</p>
   </div>
 
   <div class="section">
-    <h2>1.5–1.9 (Incrementing a Variable)</h2>
-    <p>These all mean the same thing:</p>
+    <h2>1.5–1.9 Incrementing a Variable</h2>
     <pre><code>a = a + 1;
 a += 1;
 a++;
@@ -142,127 +134,101 @@ a++;
 
   <div class="section">
     <h2>Input</h2>
-    <p>To read user input, use:</p>
     <pre><code>Scanner in = new Scanner(System.in);
 int number = in.nextInt();
 </code></pre>
   </div>
 
-  <!-- CSAwesome Big Idea 2 Notes -->
   <div class="section">
     <h2>AP CSA Unit 2 – Big Idea 2</h2>
-
     <h3>2.1 Algorithms, Selection, and Iteration</h3>
     <ul>
-      <li>Algorithm → Step-by-step process to solve a problem.</li>
-      <li>Selection → Choosing between paths using <code>if</code>, <code>if-else</code>.</li>
-      <li>Iteration → Repeating steps using loops (<code>for</code>, <code>while</code>).</li>
+      <li>Algorithm: steps to solve a problem</li>
+      <li>Selection: if / if-else</li>
+      <li>Iteration: for / while loops</li>
     </ul>
 
-    <h3>2.2 Designing Algorithms with Selection and Iteration</h3>
-    <pre><code>if(score >= 60) {
-    System.out.println("Pass");
-} else {
-    System.out.println("Fail");
-}
+    <h3>2.2 Designing Algorithms</h3>
+    <pre><code>if(score >= 60) System.out.println("Pass");</code></pre>
 
-for(int i = 1; i <= 5; i++) {
-    System.out.println(i);
-}
-</code></pre>
-
-    <h3>2.3 Using the Accumulator Pattern</h3>
-    <ul>
-      <li>Initialize accumulator variable before loop.</li>
-      <li>Update accumulator inside loop.</li>
-      <li>Use value after loop.</li>
-    </ul>
+    <h3>2.3 Accumulator Pattern</h3>
     <pre><code>int sum = 0;
-for(int i = 1; i <= 100; i++) {
-    sum += i;
-}
-double average = (double)sum / 100;
-</code></pre>
+for(int i = 1; i <= 100; i++) sum += i;</code></pre>
+  </div>
 
-    <h3>2.4 Input-Controlled Loops</h3>
-    <pre><code>Scanner scan = new Scanner(System.in);
-int number = scan.nextInt();
-int sum = 0, count = 0;
-while(number != -1) {
-    sum += number;
-    count++;
-    number = scan.nextInt();
-}
-double average = (double)sum / count;
-</code></pre>
+  <!-- UNIT 3 BEGINS -->
+  <div class="section">
+    <h2>AP CSA Unit 3 – Big Idea 3</h2>
 
-    <h3>2.5 Loop with if: Minimum and Maximum</h3>
-    <pre><code>int min = Integer.MAX_VALUE;
-int max = Integer.MIN_VALUE;
-for(int i = 0; i &lt; n; i++) {
-    int num = (int)(Math.random() * 100);
-    if(num &lt; min) min = num;
-    if(num &gt; max) max = num;
-}
-</code></pre>
-
-    <h3>2.6 Divisibility</h3>
-    <pre><code>if(num % 2 == 0) { ... }  // even
-if(num % divisor == 0) { ... }  // divisible
-</code></pre>
-
-    <h3>2.7 Finding Digits</h3>
-    <pre><code>while(number &gt; 0) {
-    int lastDigit = number % 10;
-    if(lastDigit == digit) return true;
-    number /= 10;
-}
-return false;
-</code></pre>
-
-    <h3>2.8 Frequency</h3>
-    <pre><code>int count = 0;
-for(int i = 1; i &lt;= 100; i++) {
-    if(isPrime(i)) count++;
-}
-</code></pre>
-
-    <h3>2.9 Implementing Selection and Iteration Algorithms</h3>
+    <h3>3.1 Abstraction and Program Design</h3>
     <ul>
-      <li>Accumulator pattern, input-controlled loops, min/max, divisibility, finding digits, frequency counting.</li>
+      <li>Object-Oriented Design (OOD) → identify classes, attributes, methods.</li>
+      <li>Look for nouns to find class names.</li>
+      <li>UML: - private, + public.</li>
+      <li>Abstraction → hide unnecessary details.</li>
+      <li>Data Abstraction → separates properties from internal code.</li>
+      <li>Instance variable: unique per object. Class variable: shared by all (static).</li>
+      <li>Procedural Abstraction → named processes hide implementation.</li>
+      <li>Benefits: reuse, easier debugging, maintainability.</li>
     </ul>
 
-    <h3>2.10 Implementing String Algorithms</h3>
-    <pre><code>// 2.10.1 Find & Replace
-int index;
-while(message.indexOf("1") &gt;= 0) {
-    index = message.indexOf("1");
-    message = message.substring(0,index) + "l" + message.substring(index + 1);
-}
+    <h3>3.2 Impact of Program Design</h3>
+    <ul>
+      <li>System reliability: works consistently through testing.</li>
+      <li>Societal impact: can be helpful or harmful.</li>
+      <li>Legal & ethical issues → IP, fairness, autonomy.</li>
+    </ul>
 
-// 2.10.2 For loop traversal
-for(int i = 0; i &lt; s.length(); i++) {
-    String ch = s.substring(i,i+1);
-}
+    <h3>3.3 Anatomy of a Class</h3>
+    <ul>
+      <li>Blueprint for creating objects.</li>
+      <li>Instance variables, constructors, methods.</li>
+      <li>Data Encapsulation → hide variables with private and use public accessors.</li>
+    </ul>
 
-// 2.10.3 Count characters
-int count = 0;
-for(int i = 0; i &lt; s.length(); i++) {
-    if(s.substring(i,i+1).equals("e")) count++;
-}
+    <h3>3.4 Constructors</h3>
+    <ul>
+      <li>Initialize object state.</li>
+      <li>Same name as class, no return type.</li>
+      <li>Default constructor if none written.</li>
+    </ul>
 
-// 2.10.4 Reverse string
-String sReversed = "";
-for(int i = 0; i &lt; s.length(); i++) {
-    sReversed = s.substring(i,i+1) + sReversed;
-}
+    <h3>3.5 Methods</h3>
+    <ul>
+      <li>void vs non-void methods.</li>
+      <li>Accessors (getters) and mutators (setters).</li>
+      <li>toString returns a String representation automatically in print.</li>
+      <li>Parameters enable generalization.</li>
+    </ul>
 
-// 2.10.5 Replace "cat" with "dog"
-while(message.indexOf("cat") &gt;= 0) {
-    index = message.indexOf("cat");
-    message = message.substring(0,index) + "dog" + message.substring(index + 3);
-}
-</code></pre>
+    <h3>3.6 Passing & Returning Objects</h3>
+    <ul>
+      <li>Objects passed by reference copy.</li>
+      <li>Mutable changes affect original.</li>
+      <li>Defensive copying prevents unwanted changes.</li>
+      <li>Returning objects → returns reference.</li>
+    </ul>
+
+    <h3>3.7 Static</h3>
+    <ul>
+      <li>Static variables shared by all objects.</li>
+      <li>Static methods called using class name (Math.random()).</li>
+      <li>Cannot access instance variables.</li>
+      <li>final → constants.</li>
+    </ul>
+
+    <h3>3.8 Scope</h3>
+    <ul>
+      <li>Class, method, block scope.</li>
+      <li>Shadowing hides instance variable.</li>
+    </ul>
+
+    <h3>3.9 this Keyword</h3>
+    <ul>
+      <li>Refers to current object.</li>
+      <li>Used when parameters shadow instance variables.</li>
+      <li>Not allowed in static methods.</li>
+    </ul>
   </div>
 </body>
 </html>
