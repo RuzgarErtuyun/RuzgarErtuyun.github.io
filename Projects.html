@@ -446,6 +446,76 @@ Nested loop → O(n^2) // time grows quadratically
 Helps predict performance without exact timing
     </pre>
     </div>
+    <!-- Updated HTML with Big Idea 3 Notes inserted after Big Idea 2 -->
+<!-- Due to length, only the new Big Idea 3 section is added below. Insert it in your full file. -->
+<div class="notes">
+  <h2>CodeHS Big Idea 3 Notes</h2>
+
+  <p><b>3.1 Abstraction and Program Design</b></p>
+  <pre>
+Break complex problems into smaller parts
+Focus on essential features, hide unnecessary details
+Use classes/methods to structure programs
+Plan objects + behaviors before coding
+Improves readability & maintainability
+  </pre>
+
+  <p><b>3.2 Impact of Program Design</b></p>
+  <pre>
+Good design reduces bugs
+Clear class responsibilities
+Reusable code prevents duplication
+Consistent structure improves teamwork
+Bad design → complexity & harder debugging
+  </pre>
+
+  <p><b>3.3 Anatomy of a Class</b></p>
+  <pre>
+Class = blueprint for objects
+Instance variables store state
+Methods define behavior
+Constructors initialize variables
+Access modifiers protect data
+this refers to current object
+  </pre>
+
+  <p><b>3.4 Constructors</b></p>
+  <pre>
+Used to initialize objects
+Same name as class, no return type
+Sets initial variable values
+Default constructor exists only if none written
+Can overload constructors
+  </pre>
+
+  <p><b>3.5 Methods: How to Write Them</b></p>
+  <pre>
+Header: access modifier, return type, name, parameters
+Body: code that runs
+return sends back values
+Parameters give input
+Organizes code into reusable blocks
+  </pre>
+
+  <p><b>3.6 Methods: Passing and Returning References</b></p>
+  <pre>
+Objects passed by reference
+Changing inside method affects original
+Returning object returns same reference
+Primitives passed by value
+Important for avoiding unintended changes
+  </pre>
+
+  <p><b>3.7 Class Variables and Methods</b></p>
+  <pre>
+static variables shared by all objects
+static methods belong to class
+Used for utilities/shared data
+Access via ClassName.method()
+Cannot access instance vars without object
+  </pre>
+</div>
+
   <p style="text-align:center; margin-top:20px;">
       🎥 <a href="https://youtu.be/Z-DNgEZk_R4" target="_blank" style="color:#1abc9c; font-weight:600; text-decoration:none;">
       Unit 1 & 2 Notes Explanation Video
