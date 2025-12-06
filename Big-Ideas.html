@@ -1,234 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BIG-IDEAS</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9fb;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    nav {
-      background: #005f99;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 15px;
-      font-size: 1.1em;
-      transition: color 0.3s, border-bottom 0.3s;
-      padding-bottom: 5px;
-    }
-    nav a:hover {
-      color: #ffdd57;
-      border-bottom: 2px solid #ffdd57;
-    }
-    nav a.active {
-      color: #ffdd57;
-      border-bottom: 2px solid #ffdd57;
-    }
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      margin: 30px 0 10px;
-      color: #222;
-      letter-spacing: 2px;
-    }
-    h2 {
-      color: #005f99;
-      margin-top: 25px;
-      font-size: 1.8em;
-    }
-    h3 {
-      margin-top: 20px;
-      color: #444;
-    }
-    p, li {
-      font-size: 1.1em;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: "Courier New", monospace;
-    }
-    .section {
-      background: #ffffff;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 10px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3 Object Oriented Programming Notes</title>
 </head>
 <body>
-  <nav>
-    <a href="https://ruzgarertuyun.github.io">HOME</a>
-    <a href="https://ruzgarertuyun.github.io/Documentation.html">DOCUMENTATION</a>
-    <a href="https://ruzgarertuyun.github.io/Projects.html">PROJECTS</a>
-    <a href="https://ruzgarertuyun.github.io/Big-Ideas.html" class="active">BIG-IDEAS</a>
-  </nav>
+<h1>Unit 3: Object Oriented Programming</h1>
 
-  <h1>BIG-IDEAS</h1>
+<h2>3.1 Classes and Objects</h2>
+<ul>
+  <li>A class is a blueprint for creating an object.</li>
+  <li>A class specifies the attributes (instance variables) and behavior (methods).</li>
+  <li>An object is an instance of a class.</li>
+  <li>Example: A "Dog" class and an actual dog object you create from it.</li>
+  <li>The "new" keyword creates an object (example: Dog d = new Dog()).</li>
+</ul>
 
-  <div class="section">
-    <h2>AP CSA Unit 1</h2>
-    <h3>Algorithm</h3>
-    <p>An algorithm is a step by step process to follow when completing a task or solving a problem.</p>
-    <p>It is helpful to be very specific and detailed when writing algorithms.</p>
+<h2>3.2 Using Objects</h2>
+<ul>
+  <li>Attributes are the data inside an object (like color, height).</li>
+  <li>Methods define what the object can do.</li>
+  <li>Dot notation is used to access methods: objectName.methodName()</li>
+  <li>Objects can store data using instance variables.</li>
+</ul>
 
-    <h3>Data Types</h3>
-    <p>Integers are whole numbers, doubles are decimals, booleans are true/false.</p>
+<h2>3.3 Creating and using methods</h2>
+<ul>
+  <li>Methods define behaviors of an object.</li>
+  <li>Return type tells what the method returns.</li>
+  <li>Void means the method does not return a value.</li>
+  <li>Parameters allow methods to accept input.</li>
+  <li>Method call: objectName.methodName(parameters)</li>
+</ul>
 
-    <h3>Printing</h3>
-    <p>Use <code>System.out.print()</code> to print in Java.</p>
+<h2>3.4 Writing constructors</h2>
+<ul>
+  <li>A constructor initializes the instance variables of an object.</li>
+  <li>Has the same name as the class.</li>
+  <li>Does NOT have a return type.</li>
+  <li>Constructors run automatically when you create an object.</li>
+  <li>If you write no constructor, Java provides a default one.</li>
+</ul>
 
-    <h3>Comments</h3>
-    <p>Use <code>//</code> for comments.</p>
+<h2>3.5 Documentation with comments and Javadoc</h2>
+<ul>
+  <li>Comments explain code but don't affect how it runs.</li>
+  <li>// for single-line comments, /* */ for multi-line comments.</li>
+  <li>Javadoc comments use /** */ and generate official documentation.</li>
+  <li>Useful tags include @param and @return.</li>
+</ul>
 
-    <h3>Documentation</h3>
-    <p>Documentation helps explain how code works—APIs are instruction manuals for code.</p>
-  </div>
+<h2>3.6 Overloading methods</h2>
+<ul>
+  <li>Method overloading means having multiple methods with the same name but different parameters.</li>
+  <li>They must differ in parameter type, number, or order.</li>
+  <li>Return type alone cannot overload a method.</li>
+</ul>
 
-  <div class="section">
-    <h2>Java Keywords</h2>
-    <ul>
-      <li><strong>public</strong> → accessible anywhere</li>
-      <li><strong>class</strong> → blueprint for objects</li>
-      <li><strong>static</strong> → belongs to class, not object</li>
-      <li><strong>void</strong> → returns no value</li>
-      <li><strong>main</strong> → program starting point</li>
-    </ul>
-  </div>
+<h2>3.7 Class (Static) Variables and Methods</h2>
+<ul>
+  <li>Static methods belong to the class, not objects.</li>
+  <li>Called using: ClassName.methodName().</li>
+  <li>Only one copy exists for the whole class.</li>
+  <li>main is static → only one per class.</li>
+  <li>Static methods in the same class can be called with class name or just method name.</li>
+  <li>Static methods cannot access instance variables unless given an object.</li>
+  <li>Static variables are shared by all objects and declared with the static keyword.</li>
+  <li>Useful for counters or shared values.</li>
+  <li>final keyword makes a variable constant (cannot change).</li>
+</ul>
 
-  <div class="section">
-    <h2>Skill #2 – API</h2>
-    <p>Documentation describing available methods in libraries.</p>
-  </div>
+<h2>3.8 Scope and Access</h2>
+<ul>
+  <li>Scope = where a variable can be accessed.</li>
+  <li>Class scope → instance variables available to all methods.</li>
+  <li>Method scope → local variables exist only in the method.</li>
+  <li>Block scope → variables inside loops or if-statements.</li>
+  <li>Local variables cannot be public or private.</li>
+  <li>Parameters are local variables.</li>
+  <li>Local variable names override instance variables with the same name.</li>
+  <li>this keyword is used to refer to instance variables when shadowed.</li>
+  <li>Variables cannot be used outside their scope.</li>
+</ul>
 
-  <div class="section">
-    <h2>1.5–1.9 Incrementing a Variable</h2>
-    <pre><code>a = a + 1;
-a += 1;
-a++;
-</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>Input</h2>
-    <pre><code>Scanner in = new Scanner(System.in);
-int number = in.nextInt();
-</code></pre>
-  </div>
-
-  <div class="section">
-    <h2>AP CSA Unit 2 – Big Idea 2</h2>
-    <h3>2.1 Algorithms, Selection, and Iteration</h3>
-    <ul>
-      <li>Algorithm: steps to solve a problem</li>
-      <li>Selection: if / if-else</li>
-      <li>Iteration: for / while loops</li>
-    </ul>
-
-    <h3>2.2 Designing Algorithms</h3>
-    <pre><code>if(score >= 60) System.out.println("Pass");</code></pre>
-
-    <h3>2.3 Accumulator Pattern</h3>
-    <pre><code>int sum = 0;
-for(int i = 1; i <= 100; i++) sum += i;</code></pre>
-  </div>
-
-  <!-- UNIT 3 BEGINS -->
-  <div class="section">
-    <h2>AP CSA Unit 3 – Big Idea 3</h2>
-
-    <h3>3.1 Abstraction and Program Design</h3>
-    <ul>
-      <li>Object-Oriented Design (OOD) → identify classes, attributes, methods.</li>
-      <li>Look for nouns to find class names.</li>
-      <li>UML: - private, + public.</li>
-      <li>Abstraction → hide unnecessary details.</li>
-      <li>Data Abstraction → separates properties from internal code.</li>
-      <li>Instance variable: unique per object. Class variable: shared by all (static).</li>
-      <li>Procedural Abstraction → named processes hide implementation.</li>
-      <li>Benefits: reuse, easier debugging, maintainability.</li>
-    </ul>
-
-    <h3>3.2 Impact of Program Design</h3>
-    <ul>
-      <li>System reliability: works consistently through testing.</li>
-      <li>Societal impact: can be helpful or harmful.</li>
-      <li>Legal & ethical issues → IP, fairness, autonomy.</li>
-    </ul>
-
-    <h3>3.3 Anatomy of a Class</h3>
-    <ul>
-      <li>Blueprint for creating objects.</li>
-      <li>Instance variables, constructors, methods.</li>
-      <li>Data Encapsulation → hide variables with private and use public accessors.</li>
-    </ul>
-
-    <h3>3.4 Constructors</h3>
-    <ul>
-      <li>Initialize object state.</li>
-      <li>Same name as class, no return type.</li>
-      <li>Default constructor if none written.</li>
-    </ul>
-
-    <h3>3.5 Methods</h3>
-    <ul>
-      <li>void vs non-void methods.</li>
-      <li>Accessors (getters) and mutators (setters).</li>
-      <li>toString returns a String representation automatically in print.</li>
-      <li>Parameters enable generalization.</li>
-    </ul>
-
-    <h3>3.6 Passing & Returning Objects</h3>
-    <ul>
-      <li>Objects passed by reference copy.</li>
-      <li>Mutable changes affect original.</li>
-      <li>Defensive copying prevents unwanted changes.</li>
-      <li>Returning objects → returns reference.</li>
-    </ul>
-
-    <h3>3.7 Static</h3>
-    <ul>
-      <li>Static variables shared by all objects.</li>
-      <li>Static methods called using class name (Math.random()).</li>
-      <li>Cannot access instance variables.</li>
-      <li>final → constants.</li>
-    </ul>
-
-    <h3>3.8 Scope</h3>
-    <ul>
-      <li>Class, method, block scope.</li>
-      <li>Shadowing hides instance variable.</li>
-    </ul>
-
-    <h3>3.9 this Keyword</h3>
-    <ul>
-      <li>Refers to current object.</li>
-      <li>Used when parameters shadow instance variables.</li>
-      <li>Not allowed in static methods.</li>
-    </ul>
-  </div>
 </body>
 </html>
