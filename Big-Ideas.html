@@ -242,5 +242,118 @@ for(int i = 1; i <= 100; i++) sum += i;</code></pre>
       <li>Not allowed in static methods.</li>
     </ul>
   </div>
+    <!-- UNIT 4 BEGINS -->
+  <div class="section">
+    <h2>AP CSA Unit 4 – Big Idea 4 (Data & Arrays)</h2>
+
+    <h3>4.1 Ethical and Social Issues Around Data Collection</h3>
+    <ul>
+      <li>Data collection includes personal, behavioral, location, and biometric data.</li>
+      <li>Privacy → users should know what data is being collected and how it is used.</li>
+      <li>Bias in data can cause unfair or inaccurate program results.</li>
+      <li>Programmers must consider fairness and avoid discriminatory algorithms.</li>
+      <li>Data security protects against breaches and hacking.</li>
+      <li>Ethical responsibility → collect only necessary data and protect it properly.</li>
+      <li>Programs can have major societal impacts (positive or harmful).</li>
+    </ul>
+
+    <h3>4.2 Introduction to Using Data Sets</h3>
+    <ul>
+      <li>Data set → collection of related values.</li>
+      <li>In Java, data sets are commonly stored in arrays.</li>
+      <li>Programs analyze data to find patterns or make decisions.</li>
+      <li>Data sets allow efficient storage of multiple values.</li>
+      <li>Examples: test scores, temperatures, survey results, statistics.</li>
+    </ul>
+
+    <h3>4.3 Array Creation and Access</h3>
+    <ul>
+      <li>Array → fixed-size collection of same data type.</li>
+      <li>Arrays are 0-indexed (first element is index 0).</li>
+      <li>Declaration:</li>
+    </ul>
+    <pre><code>int[] numbers;</code></pre>
+
+    <ul>
+      <li>Creation:</li>
+    </ul>
+    <pre><code>numbers = new int[5];</code></pre>
+
+    <ul>
+      <li>Combined:</li>
+    </ul>
+    <pre><code>int[] numbers = new int[5];</code></pre>
+
+    <ul>
+      <li>Initialize with values:</li>
+    </ul>
+    <pre><code>int[] numbers = {1, 2, 3, 4};</code></pre>
+
+    <ul>
+      <li>Access element → <code>numbers[index]</code></li>
+      <li>Length → <code>numbers.length</code> (no parentheses)</li>
+      <li>Invalid index causes ArrayIndexOutOfBoundsException.</li>
+    </ul>
+
+    <h3>4.4 Array Traversals</h3>
+    <ul>
+      <li>Traversal → visiting every element in an array.</li>
+      <li>Standard for loop:</li>
+    </ul>
+    <pre><code>for(int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}</code></pre>
+
+    <ul>
+      <li>Enhanced for loop (for-each):</li>
+    </ul>
+    <pre><code>for(int value : arr) {
+    System.out.println(value);
+}</code></pre>
+
+    <ul>
+      <li>Common patterns:</li>
+      <li>Sum (accumulator)</li>
+      <li>Find maximum/minimum</li>
+      <li>Count values meeting a condition</li>
+      <li>Off-by-one errors happen when using ≤ instead of &lt;</li>
+    </ul>
+
+    <h3>4.5 Implementing Array Algorithms</h3>
+    <ul>
+      <li>Algorithm → step-by-step solution.</li>
+      <li>Linear search scans from index 0 to end.</li>
+    </ul>
+    <pre><code>public static int find(int[] arr, int target) {
+    for(int i = 0; i < arr.length; i++) {
+        if(arr[i] == target) {
+            return i;
+        }
+    }
+    return -1;
+}</code></pre>
+
+    <ul>
+      <li>Modify elements:</li>
+    </ul>
+    <pre><code>for(int i = 0; i < arr.length; i++) {
+    arr[i] *= 2;
+}</code></pre>
+
+    <ul>
+      <li>Replace conditionally:</li>
+    </ul>
+    <pre><code>for(int i = 0; i < arr.length; i++) {
+    if(arr[i] < 0) {
+        arr[i] = 0;
+    }
+}</code></pre>
+
+    <ul>
+      <li>Efficiency: linear search is O(n).</li>
+      <li>Be able to trace and predict final array values on the AP exam.</li>
+    </ul>
+  </div>
+
 </body>
 </html>
