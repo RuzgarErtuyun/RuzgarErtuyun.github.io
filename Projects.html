@@ -530,7 +530,7 @@ this keyword can also be used to refer to current object inside of a method.
   </pre>
   <!-- CodeHS Big Idea 4 Notes -->
 <div class="notes">
-  <h2>CodeHS Big Idea 4 Notes</h2>
+<h2>CodeHS Big Idea 4 Notes</h2>
 
   <p><b>4.1 Ethical and Social Issues Around Data Collection</b></p>
   <pre>
@@ -606,6 +606,126 @@ Steps:
 Files may contain numbers, strings, or mixed data
 Raises privacy and security concerns
   </pre>
+
+  <p><b>4.7 Wrapper Classes</b></p>
+  <pre>
+Wrapper class → Object version of primitive type
+int → Integer
+double → Double
+char → Character
+boolean → Boolean
+
+Required for ArrayList
+Autoboxing → Automatic primitive → object conversion
+Unboxing → Object → primitive
+Allows use of methods with primitive data
+  </pre>
+
+  <p><b>4.8 ArrayList Methods</b></p>
+  <pre>
+ArrayList → Resizable array
+
+add(value) → Adds to end
+add(index, value) → Inserts at index
+get(index) → Returns element
+set(index, value) → Replaces element
+remove(index) → Deletes element
+size() → Number of elements
+clear() → Removes all elements
+
+Stores objects, not primitives
+  </pre>
+
+  <p><b>4.9 ArrayList Traversals</b></p>
+  <pre>
+Traversal → Visiting each element in the list
+
+for loop → Needed to modify elements
+enhanced for loop → Read-only access
+
+Use .size() for loop bounds
+
+Common uses:
+- Sum values
+- Count matches
+- Find max/min
+- Print elements
+  </pre>
+
+  <p><b>4.10 Implementing ArrayList Algorithms</b></p>
+  <pre>
+Same logic as array algorithms but dynamic size
+
+Common tasks:
+- Searching for a value
+- Finding max/min
+- Counting occurrences
+- Removing elements that meet a condition
+- Inserting at specific position
+
+When removing during traversal → go backwards to avoid skipping elements
+  </pre>
+
+  <p><b>4.11 2D Array Creation and Access</b></p>
+  <pre>
+2D array → Array of arrays (table/grid)
+
+int[][] grid = new int[rows][cols];
+
+grid[row][col] → Access element
+
+grid.length → Number of rows
+grid[0].length → Number of columns
+
+Used for:
+- Game boards
+- Seating charts
+- Images
+  </pre>
+
+  <p><b>4.12 2D Array Traversals</b></p>
+  <pre>
+Requires nested loops
+
+Outer loop → Rows
+Inner loop → Columns
+
+Used to:
+- Print all values
+- Sum rows or columns
+- Search for a value
+- Count matches
+  </pre>
+
+  <p><b>4.13 Implementing 2D Array Algorithms</b></p>
+  <pre>
+Common tasks:
+- Find largest or smallest value
+- Row sum / column sum
+- Count specific values
+- Replace values
+- Check patterns in grid
+
+Requires:
+- Nested traversal
+- Tracking variables
+- Conditional logic
+  </pre>
+
+  <p><b>4.14 Searching Algorithms</b></p>
+  <pre>
+Linear search → Checks each element
+Works on unsorted data
+O(n)
+
+Binary search → Requires sorted data
+Repeatedly checks middle value
+Eliminates half each step
+O(log n)
+
+Binary search is much faster for large data sets
+  </pre>
+
 </div>
 
   
