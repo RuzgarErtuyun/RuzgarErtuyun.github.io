@@ -725,6 +725,88 @@ O(log n)
 
 Binary search is much faster for large data sets
   </pre>
+  <p><b>4.15 Sorting Algorithms</b></p>
+<pre>
+Sorting → Rearranging elements in an array or ArrayList into a specific order
+
+AP CSA focuses on:
+Selection Sort
+Insertion Sort
+
+Selection Sort
+- Find the smallest element in the unsorted portion
+- Swap it with the first unsorted position
+- Repeat until sorted
+
+Idea:
+for each index i
+  find smallest value from i → end
+  swap with element at i
+
+Insertion Sort
+- Builds a sorted section at the beginning
+- Each new element is inserted into the correct place
+- Elements shift right to make space
+
+Idea:
+for each element
+  move it left until it is in correct position
+
+Both algorithms use:
+- Array traversal
+- Comparisons
+- Swapping elements
+</pre>
+
+<p><b>4.16 Recursion</b></p>
+<pre>
+Recursion → A method that calls itself
+
+Two required parts:
+
+Base Case
+- Condition that stops recursion
+
+Recursive Case
+- Method calls itself with a smaller problem
+
+Example structure:
+
+public int example(int n)
+{
+  if (n == 0)
+    return baseValue;
+
+  return example(n - 1);
+}
+
+Each recursive call:
+- Moves toward the base case
+- Reduces the problem size
+
+If there is no base case → infinite recursion → StackOverflowError
+</pre>
+
+<p><b>4.17 Recursive Searching and Sorting</b></p>
+<pre>
+Recursion can be used with searching and sorting algorithms
+
+Recursive Binary Search
+- Works on sorted arrays
+- Check middle element
+- If target is smaller → search left half
+- If larger → search right half
+- Continue until element found or range is empty
+
+Idea:
+check middle
+if equal → return index
+if smaller → search left
+if larger → search right
+
+Recursive algorithms often divide problems into smaller subproblems
+until reaching a base case.
+</pre>
 
 </div>
 
