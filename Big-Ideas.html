@@ -353,6 +353,193 @@ for(int i = 1; i <= 100; i++) sum += i;</code></pre>
       <li>Efficiency: linear search is O(n).</li>
       <li>Be able to trace and predict final array values on the AP exam.</li>
     </ul>
+      <h3>4.6 Using Text Files</h3>
+<ul>
+  <li>Programs can read data stored in files.</li>
+  <li>Useful when working with large data sets.</li>
+  <li>Files often contain numbers, text, or structured data.</li>
+  <li>Data from files is often stored in arrays or ArrayLists for processing.</li>
+  <li>Programs must handle missing or invalid data safely.</li>
+</ul>
+
+<h3>4.7 Wrapper Classes</h3>
+<ul>
+  <li>Wrapper classes convert primitive types into objects.</li>
+  <li>Needed when using collections like ArrayList.</li>
+  <li>Examples:</li>
+</ul>
+
+<pre><code>int → Integer
+double → Double
+char → Character
+boolean → Boolean</code></pre>
+
+<ul>
+  <li>Autoboxing → automatic conversion from primitive to wrapper object.</li>
+  <li>Unboxing → converting wrapper object back to primitive.</li>
+</ul>
+
+<h3>4.8 ArrayList Methods</h3>
+<ul>
+  <li>ArrayList → resizable array structure.</li>
+  <li>Unlike arrays, size can grow or shrink.</li>
+</ul>
+
+<pre><code>ArrayList<Integer> nums = new ArrayList<>();
+
+nums.add(5);        // add to end
+nums.add(0, 3);     // insert at index
+nums.get(0);        // retrieve value
+nums.set(1, 10);    // replace value
+nums.remove(0);     // remove element
+nums.size();        // number of elements
+nums.clear();       // remove all elements</code></pre>
+
+<ul>
+  <li>ArrayLists store objects, not primitives.</li>
+</ul>
+
+<h3>4.9 ArrayList Traversals</h3>
+<ul>
+  <li>Traversal means visiting every element.</li>
+  <li>Use <code>.size()</code> instead of <code>.length</code>.</li>
+</ul>
+
+<pre><code>for(int i = 0; i < list.size(); i++) {
+    System.out.println(list.get(i));
+}</code></pre>
+
+<pre><code>for(int value : list) {
+    System.out.println(value);
+}</code></pre>
+
+<ul>
+  <li>Enhanced loop cannot modify elements directly.</li>
+</ul>
+
+<h3>4.10 Implementing ArrayList Algorithms</h3>
+<ul>
+  <li>Same patterns used for arrays apply to ArrayLists.</li>
+  <li>Common tasks:</li>
+  <li>Searching for a value</li>
+  <li>Counting occurrences</li>
+  <li>Finding max/min</li>
+  <li>Removing elements meeting a condition</li>
+</ul>
+
+<ul>
+  <li>When removing elements during traversal → loop backwards.</li>
+</ul>
+
+<pre><code>for(int i = list.size() - 1; i >= 0; i--) {
+    if(list.get(i) < 0) {
+        list.remove(i);
+    }
+}</code></pre>
+
+<h3>4.11 2D Array Creation and Access</h3>
+<ul>
+  <li>2D array → array of arrays.</li>
+  <li>Used for tables, grids, or boards.</li>
+</ul>
+
+<pre><code>int[][] grid = new int[3][4];
+
+grid[0][1] = 5;</code></pre>
+
+<ul>
+  <li><code>grid.length</code> → number of rows.</li>
+  <li><code>grid[0].length</code> → number of columns.</li>
+</ul>
+
+<h3>4.12 2D Array Traversals</h3>
+<ul>
+  <li>Require nested loops.</li>
+</ul>
+
+<pre><code>for(int r = 0; r < grid.length; r++) {
+    for(int c = 0; c < grid[r].length; c++) {
+        System.out.println(grid[r][c]);
+    }
+}</code></pre>
+
+<ul>
+  <li>Outer loop → rows</li>
+  <li>Inner loop → columns</li>
+</ul>
+
+<h3>4.13 Implementing 2D Array Algorithms</h3>
+<ul>
+  <li>Algorithms use nested traversals.</li>
+  <li>Common problems:</li>
+  <li>Find largest value</li>
+  <li>Count occurrences</li>
+  <li>Sum rows or columns</li>
+  <li>Replace values</li>
+  <li>Search grid patterns</li>
+</ul>
+
+<h3>4.14 Searching Algorithms</h3>
+<ul>
+  <li>Linear Search</li>
+  <li>Checks each element one by one.</li>
+</ul>
+
+<pre><code>for(int i = 0; i < arr.length; i++) {
+    if(arr[i] == target)
+        return i;
+}</code></pre>
+
+<ul>
+  <li>Binary Search</li>
+  <li>Works only on sorted arrays.</li>
+  <li>Repeatedly checks the middle element.</li>
+</ul>
+
+<h3>4.15 Sorting Algorithms</h3>
+<ul>
+  <li>Sorting → arranging elements in order.</li>
+  <li>AP CSA focuses on two algorithms:</li>
+  <li>Selection Sort</li>
+  <li>Insertion Sort</li>
+</ul>
+
+<ul>
+  <li>Selection Sort:</li>
+  <li>Find smallest element and swap into correct position.</li>
+</ul>
+
+<ul>
+  <li>Insertion Sort:</li>
+  <li>Build sorted section one element at a time.</li>
+</ul>
+
+<h3>4.16 Recursion</h3>
+<ul>
+  <li>Recursion → method that calls itself.</li>
+  <li>Requires two parts:</li>
+  <li>Base case → stops recursion.</li>
+  <li>Recursive call → smaller version of the problem.</li>
+</ul>
+
+<pre><code>public int factorial(int n) {
+    if(n == 0)
+        return 1;
+
+    return n * factorial(n - 1);
+}</code></pre>
+
+<ul>
+  <li>Missing base case causes infinite recursion.</li>
+</ul>
+
+<h3>4.17 Recursive Searching and Sorting</h3>
+<ul>
+  <li>Binary search can be implemented recursively.</li>
+  <li>Algorithm repeatedly searches smaller halves of the array.</li>
+  <li>Recursion reduces the search range each call.</li>
+  <li>Stops when element is found or range becomes empty.</li>
+</ul>
   </div>
 
 </body>
